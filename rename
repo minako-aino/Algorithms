@@ -1,0 +1,7 @@
+
+COUNTER=1
+for file in $(ls invoices3)
+do
+  mv ./invoices3/$file "./invoices3/receipt-$COUNTER.png"
+  let COUNTER++
+done
